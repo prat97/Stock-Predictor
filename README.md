@@ -7,7 +7,7 @@
 ### 5. [Screenshots ](#screenshots)
 
 ## <a name="general-info"></a>General Info.
-
+A python application that predicts stock prices for 30 days into the future using linear regression model.
  
 ## <a name="technologies"></a>Technologies
 
