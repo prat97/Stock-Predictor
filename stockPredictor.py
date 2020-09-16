@@ -2,7 +2,6 @@
 """
 Created on Tue Sep 15 16:45:40 2020
 
-@author: Prathamesh Bramhankar
 """
 
 import tkinter
