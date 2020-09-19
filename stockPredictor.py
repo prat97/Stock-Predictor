@@ -7,6 +7,7 @@ Created on Tue Sep 15 16:45:40 2020
 import tkinter
 import tkinter.messagebox
 import datetime
+from matplotlib.pyplot import ylabel
 import yfinance as yf
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -103,6 +104,7 @@ def openNewWindow(zz, pp):
     df2 = df2[['Stock Prices History','Dates']].groupby('Dates').sum()
     df2.plot(kind='line', legend=True, ax=ax2, color='b',marker='o', fontsize=10)
     ax2.set_title('Stock Prices for last 30 days')
+    ax2.set_ylabel("Prices")
     
     data = {'Stock Prices Prediction': pp, 'Dates': dates}
     df1 = pd.DataFrame(data, columns = ['Stock Prices Prediction', 'Dates'])
@@ -113,6 +115,7 @@ def openNewWindow(zz, pp):
     df1 = df1[['Stock Prices Prediction','Dates']].groupby('Dates').sum()
     df1.plot(kind='line', legend=True, ax=ax1, color='r',marker='o', fontsize=10)
     ax1.set_title('Stock Prices Predicion')
+    ax1.set_ylabel("Prices")
     
 
 s1= tkinter.Label(top, text="------------------------------------------------------------------------------------------------------------------------")
