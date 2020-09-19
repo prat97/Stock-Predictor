@@ -7,7 +7,7 @@ Created on Tue Sep 15 16:45:40 2020
 import tkinter
 import tkinter.messagebox
 import datetime
-from matplotlib.pyplot import ylabel
+from matplotlib.pyplot import *
 import yfinance as yf
 import pandas as pd
 import matplotlib.pyplot as plt
