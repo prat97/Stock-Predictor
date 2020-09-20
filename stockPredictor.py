@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Tue Sep 15 16:45:40 2020
-
 """
 
 import tkinter
@@ -35,6 +34,11 @@ for i in range(30):
     prev_dates.append(date.strftime("%m-%d"))
 
 def getStockData():
+    
+    if s.get() == 0:
+        tkinter.messagebox.showerror("Error", "Please select a stock you want to predict data for!")
+        return
+
     tickerSymbol = acr[s.get()-1]
     #get data on this ticker
     tickerData = yf.Ticker(tickerSymbol)
